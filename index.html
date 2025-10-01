@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>4-Year Transformative Framework — IT Student Guidance Dashboard</title>
+  <style>
+    :root{--bg:#0f172a;--card:#0b1220;--accent:#1e90ff;--muted:#94a3b8;--surface:#071026}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,#071029 0%, #0b1220 100%);color:#e6eef8}
+    .container{max-width:1100px;margin:28px auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center}
+    header h1{margin:0;font-size:20px;letter-spacing:0.2px}
+    header p{margin:0;color:var(--muted);font-size:13px}
+    .controls{margin-left:auto;display:flex;gap:8px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px;color:#d8e8ff;cursor:pointer;font-size:13px}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#4aa3ff);border:none;color:#042033}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .year-header{display:flex;align-items:center;gap:12px}
+    .year-title{font-weight:700;font-size:18px}
+    .year-sub{color:var(--muted);font-size:13px}
+    .expand{margin-left:auto;display:flex;gap:8px}
+    details{margin-top:12px}
+    summary{cursor:pointer;outline:none;display:flex;align-items:center;gap:10px}
+    .pill{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:12px}
+    ul{margin:8px 0 12px 18px}
+    li{margin:6px 0}
+    .section{display:grid;grid-template-columns:1fr 260px;gap:14px}
+    .sidebar{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+    .timeline{display:flex;flex-direction:column;gap:8px}
+    .chip{display:inline-block;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.02);font-size:12px}
+    footer{margin-top:22px;color:var(--muted);font-size:13px}
+    .search{width:260px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    pre{background:rgba(255,255,255,0.02);padding:10px;border-radius:8px;overflow:auto}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}.section{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Co-Academic Transformative Framework for IT Student - By Prof. Rahul M. Samant | HOD-IT, NBNSTIC</h1>
+        <p>Year-wise interactive dashboard: Mindset, Skills, Teachers, stimuli, Department activities.</p>
+      </div>
+
+      <div class="controls">
+        
+        <button class="btn" id="expandAll">Expand all</button>
+        <button class="btn" id="collapseAll">Collapse all</button>
+       
+      </div>
+    </header>
+
+    <main class="grid" id="mainGrid">
+
+      <!-- Year 1 -->
+      <section class="card" data-year="1">
+        <div class="year-header">
+          <div>
+            <div class="year-title">Year 1 — Foundation & Orientation</div>
+            <div class="year-sub">Objective: Shift students to self-driven, professional-oriented learning.</div>
+          </div>
+          <div class="pill">Mindset Formation</div>
+        </div>
+
+        <details>
+          <summary>
+            <strong>Overview</strong>
+            <span class="expand">
+            
+            
+            </span>
+          </summary>
+
+          <div class="section" style="margin-top:12px">
+            <div>
+              <h4>Mindset & Attitude Goals</h4>
+              <ul>
+                <li>Curiosity, openness to learning</li>
+                <li>Discipline, punctuality, responsibility</li>
+                <li>Collaborative teamwork and peer respect</li>
+              </ul>
+
+              <h4>Skills Focus</h4>
+              <ul>
+                <li>Introductory programming (Python, C)</li>
+                <li>Computing fundamentals, digital logic, mathematics</li>
+                <li>Basic communication and presentation</li>
+                <li>Introduction to Git, Linux, IDEs</li>
+              </ul>
+
+              <h4>Teacher Stimuli & Activities</h4>
+              <ul>
+                <li>Motivational talks and industry orientation</li>
+                <li>Weekly mini coding challenges</li>
+                <li>Group projects (exploratory, non‑graded)</li>
+                <li>Peer‑led learning circles and senior mentoring</li>
+              </ul>
+            </div>
+
+            <aside class="sidebar">
+              <strong>Department activities</strong>
+              <div class="timeline" style="margin-top:8px">
+                <div><strong>Coding Bootcamp</strong> — Semester 1 intensive</div>
+                <div><strong>Communication Workshop</strong> — Early semester</div>
+                <div><strong>Peer Mentoring</strong> — Ongoing</div>
+              </div>
+            </aside>
+          </div>
+
+        </details>
+      </section>
+
+      <!-- Year 2 -->
+      <section class="card" data-year="2">
+        <div class="year-header">
+          <div>
+            <div class="year-title">Year 2 — Skill Development & Exploration</div>
+            <div class="year-sub">Objective: Strengthen core skills; initiate project-based learning.</div>
+          </div>
+          <div class="pill">Project-based</div>
+        </div>
+
+        <details>
+          <summary>
+            <strong>Overview</strong>
+            <span class="expand">
+              
+            </span>
+          </summary>
+
+          <div class="section" style="margin-top:12px">
+            <div>
+              <h4>Mindset & Attitude Goals</h4>
+              <ul>
+                <li>Self-directed study beyond syllabus</li>
+                <li>Embrace iterative failure and experimentation</li>
+                <li>Consistency and reflective practice</li>
+              </ul>
+
+              <h4>Skills Focus</h4>
+              <ul>
+                <li>Data structures & algorithms, DBMS</li>
+                <li>Web & mobile application basics</li>
+                <li>Technical report writing and research basics</li>
+                <li>Version control and collaborative workflows</li>
+              </ul>
+
+              <h4>Teacher Stimuli</h4>
+              <ul>
+                <li>Flipped classroom with student presentations</li>
+                <li>Course-end mini-projects and code reviews</li>
+                <li>Encourage competitive coding & hackathon prep</li>
+              </ul>
+            </div>
+
+            <aside class="sidebar">
+              <strong>Department activities</strong>
+              <div style="margin-top:8px">
+                <div><strong>Internal Hackathon</strong> — Biannual</div>
+                <div><strong>Industrial Visits</strong> — Targeted to core domains</div>
+                <div><strong>Project Exhibition Day</strong> — Semester end</div>
+              </div>
+            </aside>
+          </div>
+
+        </details>
+      </section>
+
+      <!-- Year 3 -->
+      <section class="card" data-year="3">
+        <div class="year-header">
+          <div>
+            <div class="year-title">Year 3 — Professionalism & Specialization</div>
+            <div class="year-sub">Objective: Industry-ready competencies & specialization.</div>
+          </div>
+          <div class="pill">Specialization</div>
+        </div>
+
+        <details>
+          <summary>
+            <strong>Overview</strong>
+            <span class="expand">
+             
+            </span>
+          </summary>
+
+          <div class="section" style="margin-top:12px">
+            <div>
+              <h4>Mindset & Attitude Goals</h4>
+              <ul>
+                <li>Ownership of career direction</li>
+                <li>Resilience and adaptability</li>
+                <li>Professional networking and collaboration</li>
+              </ul>
+
+              <h4>Skills Focus</h4>
+              <ul>
+                <li>Advanced programming, system design</li>
+                <li>Electives: Cloud, AI/ML, Cybersecurity, DevOps</li>
+                <li>Open-source contribution and technical writing</li>
+              </ul>
+
+              <h4>Teacher Stimuli</h4>
+              <ul>
+                <li>Independent research-based projects</li>
+                <li>Industry-level case studies and critiques</li>
+                <li>Mock interviews, resume clinics and mentorship</li>
+              </ul>
+            </div>
+
+            <aside class="sidebar">
+              <strong>Department activities</strong>
+              <div style="margin-top:8px">
+                <div><strong>Mandatory Summer Internship</strong> — Secured & monitored</div>
+                <div><strong>Industry Mentor Program</strong> — Pairing scheme</div>
+                <div><strong>Student Research Conference</strong> — Project showcases</div>
+              </div>
+            </aside>
+          </div>
+
+        </details>
+      </section>
+
+      <!-- Year 4 -->
+      <section class="card" data-year="4">
+        <div class="year-header">
+          <div>
+            <div class="year-title">Year 4 — Leadership & Career Readiness</div>
+            <div class="year-sub">Objective: Leadership, entrepreneurship, final consolidation.</div>
+          </div>
+          <div class="pill">Capstone</div>
+        </div>
+
+        <details>
+          <summary>
+            <strong>Overview</strong>
+            <span class="expand">
+              
+            </span>
+          </summary>
+
+          <div class="section" style="margin-top:12px">
+            <div>
+              <h4>Mindset & Attitude Goals</h4>
+              <ul>
+                <li>Leadership, ownership and innovation</li>
+                <li>Resilience in uncertainty (startup/job)</li>
+                <li>Ethical responsibility in technology</li>
+              </ul>
+
+              <h4>Skills Focus</h4>
+              <ul>
+                <li>Capstone project (industry/research partnered)</li>
+                <li>Advanced technical specializations</li>
+                <li>Entrepreneurial skills — pitching, business plans</li>
+              </ul>
+
+              <h4>Teacher Stimuli</h4>
+              <ul>
+                <li>Industry capstone guidance and continuous feedback</li>
+                <li>Alumni sessions on careers and failures</li>
+                <li>Support for entrepreneurship and funding pathways</li>
+              </ul>
+            </div>
+
+            <aside class="sidebar">
+              <strong>Department activities</strong>
+              <div style="margin-top:8px">
+                <div><strong>Final Project Exhibition</strong> + Pitching Event</div>
+                <div><strong>Placement Readiness Program</strong> — Mock tests, HR rounds</div>
+                <div><strong>Innovation & Entrepreneurship Cell</strong> — Showcases</div>
+              </div>
+            </aside>
+          </div>
+
+        </details>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          <strong> Designed by Prof. Rahul M. Samant | HOD-IT, NBNSTIC for Self-reliant, resilient professionals with ethical, collaborative attitudes and industry-ready skills.</strong>
+        </div>
+        <div style="color:var(--muted);font-size:13px;"></div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Expand / collapse controls
+    const expandAll = document.getElementById('expandAll');
+    const collapseAll = document.getElementById('collapseAll');
+    const details = Array.from(document.querySelectorAll('details'));
+    expandAll.addEventListener('click', ()=> details.forEach(d=>d.open=true));
+    collapseAll.addEventListener('click', ()=> details.forEach(d=>d.open=false));
+
+    // Search
+    const searchInput = document.getElementById('search');
+    searchInput.addEventListener('input', (e)=>{
+      const q = e.target.value.trim().toLowerCase();
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card=>{
+        if(!q){card.style.display='block'; return}
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(q) ? 'block' : 'none';
+      })
+    });
+
+    // Download HTML
+    const downloadBtn = document.getElementById('downloadBtn');
+    downloadBtn.addEventListener('click', ()=>{
+      const content = '<!doctype html>' + document.documentElement.innerHTML;
+      const blob = new Blob([content], {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = '4-Year_IT_Transformative_Framework.html';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    });
+
+    // Accessibility: allow enter on summary to toggle
+    document.querySelectorAll('summary').forEach(s=>{
+      s.addEventListener('keydown', (e)=>{ if(e.key==='Enter' || e.key===' ') { e.preventDefault(); const d = s.parentElement; d.open = !d.open; } })
+    });
+  </script>
+</body>
+</html>
